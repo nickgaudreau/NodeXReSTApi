@@ -5,7 +5,7 @@ var postController = function (Post) {
         var post = new Post(req.body);
         // create new post -> document -> in mongodb 
         post.save();
-        console.log(post);
+        //console.log(post);
         // send status created  and post returned
         res.status(201).send(post);
     }
